@@ -2,21 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Character Sheet</title>
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
     <form>
-        Name: <input type="text" name="name">
-        Nature: <input type="text" name="nature">
-        Clan: <input type="text" name="clan">
-        </br>
-        Player: <input type="text" name="player">
-        Demeanor: <input type="text" name="demeanor">
-        Generation: <input type="text" name="generation">
-        </br>
-        Chronicle: <input type="text" name="chronicle">
-        Concept: <input type="text" name="concept">
-        Sire: <input type="text" name="sire">
+        Name: <input type="text" value="" id="name">
+        Nature: <input type="text" value="" id="nature">
+        Clan: <input type="text" value="" id="clan">
+        <br>
+        Player: <input type="text" value="" id="player">
+        Demeanor: <input type="text" value="" id="demeanor">
+        Generation: <input type="text" value="" id="generation">
+        <br>
+        Chronicle: <input type="text" value="" id="chronicle">
+        Concept: <input type="text" value="" id="concept">
+        Sire: <input type="text" value="" id="sire">
     </form>
+
+    <br>
+    ----------------------------------------
+    Attributes
+    ----------------------------------------
+    <br>Physical<br>
+    Strength
+    <input type="range" min="1" max="5" value=1 onchange="showValue('strengthOut',value)" id="strength">
+    <output id="strengthOut">1</output><br>
+    Dexterity
+    <input type="range" min="1" max="5" value=1 onchange="showValue('dexterityOut',value)" id="dexterity">
+    <output id="dexterityOut">1</output><br>
+    Stamina
+    <input type="range" min="1" max="5" value=1 onchange="showValue('staminaOut',value)" id="stamina">
+    <output id="staminaOut">1</output><br>
+
+    <br>Social<br>
+    Charisma
+    <input type="range" min="1" max="5" value=1 onchange="showValue('charismaOut',value)" id="charisma">
+    <output id="charismaOut">1</output><br>
+    Manipulation
+    <input type="range" min="1" max="5" value=1 onchange="showValue('manipulationOut',value)" id="manipulation">
+    <output id="manipulationOut">1</output><br>
+    Appearance
+    <input type="range" min="1" max="5" value=1 onchange="showValue('appearanceOut',value)" id="appearance">
+    <output id="appearanceOut">1</output><br>
+
+    <br>Mental<br>
+    Perception
+    <input type="range" min="1" max="5" value=1 onchange="showValue('perceptionOut',value)" id="perception">
+    <output id="perceptionOut">1</output><br>
+    Intelligence
+    <input type="range" min="1" max="5" value=1 onchange="showValue('intelligenceOut',value)" id="intelligence">
+    <output id="intelligenceOut">1</output><br>
+    Wits
+    <input type="range" min="1" max="5" value=1 onchange="showValue('witsOut',value)" id="wits">
+    <output id="witsOut">1</output><br>
+
+    <br>
+    ----------------------------------------
+    Abilities
+    ----------------------------------------
+    <br>Talents<br>
+    Alertness
+    <input type="range" min="1" max="5" value=1 onchange="showValue('alertnessOut',value)" id="alertness">
+    <output id="alertnessOut">1</output><br>
+    Athletics
+    <input type="range" min="1" max="5" value=1 onchange="showValue('athleticsOut',value)" id="athletics">
+    <output id="athleticsOut">1</output><br>
+    Awareness
+    <input type="range" min="1" max="5" value=1 onchange="showValue('awarenessOut',value)" id="awareness">
+    <output id="awarenessOut">1</output><br>
+    Brawl
+    <input type="range" min="1" max="5" value=1 onchange="showValue('brawlOut',value)" id="brawl">
+    <output id="brawlOut">1</output><br>
+    Empathy
+    <input type="range" min="1" max="5" value=1 onchange="showValue('empathyOut',value)" id="empathy">
+    <output id="empathyOut">1</output><br>
+    Expression
+    <input type="range" min="1" max="5" value=1 onchange="showValue('expressionOut',value)" id="expression">
+    <output id="expressionOut">1</output><br>
+    Intimidation
+    <input type="range" min="1" max="5" value=1 onchange="showValue('intimidationOut',value)" id="intimidation">
+    <output id="intimidationOut">1</output><br>
+    Leadership
+    <input type="range" min="1" max="5" value=1 onchange="showValue('leadershipOut',value)" id="leadership">
+    <output id="leadershipOut">1</output><br>
+    Streetwise
+    <input type="range" min="1" max="5" value=1 onchange="showValue('streetwiseOut',value)" id="streetwise">
+    <output id="streetwiseOut">1</output><br>
+    Subterfuge
+    <input type="range" min="1" max="5" value=1 onchange="showValue('subterfugeOut',value)" id="subterfuge">
+    <output id="subterfugeOut">1</output><br>
+
+    <br>Skills<br>
+    Animal Ken
+    <input type="range" min="1" max="5" value=1 onchange="showValue('animalKenOut',value)" id="animalKen">
+    <output id="animalKenOut">1</output><br>
+    Crafts
+    <input type="range" min="1" max="5" value=1 onchange="showValue('craftsOut',value)" id="crafts">
+    <output id="craftsOut">1</output><br>
+    Drive
+    <input type="range" min="1" max="5" value=1 onchange="showValue('driveOut',value)" id="drive">
+    <output id="driveOut">1</output><br>
+    Etiquette
+    <input type="range" min="1" max="5" value=1 onchange="showValue('etiquetteOut',value)" id="etiquette">
+    <output id="etiquetteOut">1</output><br>
+    Firearms
+    <input type="range" min="1" max="5" value=1 onchange="showValue('firearmsOut',value)" id="firearms">
+    <output id="firearmsOut">1</output><br>
+    Larceny
+    <input type="range" min="1" max="5" value=1 onchange="showValue('larcenyOut',value)" id="larceny">
+    <output id="larcenyOut">1</output><br>
+    Melee
+    <input type="range" min="1" max="5" value=1 onchange="showValue('meleeOut',value)" id="melee">
+    <output id="meleeOut">1</output><br>
+    Performance
+    <input type="range" min="1" max="5" value=1 onchange="showValue('performanceOut',value)" id="performance">
+    <output id="performanceOut">1</output><br>
+    Stealth
+    <input type="range" min="1" max="5" value=1 onchange="showValue('stealthOut',value)" id="stealth">
+    <output id="stealthOut">1</output><br>
+    Survival
+    <input type="range" min="1" max="5" value=1 onchange="showValue('survivalOut',value)" id="survival">
+    <output id="survivalOut">1</output><br>
+
+    <br>Knowledges<br>
+    Academics
+    <input type="range" min="1" max="5" value=1 onchange="showValue('academicsOut',value)" id="academics">
+    <output id="academicsOut">1</output><br>
+    Computer
+    <input type="range" min="1" max="5" value=1 onchange="showValue('computerOut',value)" id="computer">
+    <output id="computerOut">1</output><br>
+    Finance
+    <input type="range" min="1" max="5" value=1 onchange="showValue('financeOut',value)" id="finance">
+    <output id="financeOut">1</output><br>
+    Investigation
+    <input type="range" min="1" max="5" value=1 onchange="showValue('investigationOut',value)" id="investigation">
+    <output id="investigationOut">1</output><br>
+    Law
+    <input type="range" min="1" max="5" value=1 onchange="showValue('lawOut',value)" id="law">
+    <output id="lawOut">1</output><br>
+    Medicine
+    <input type="range" min="1" max="5" value=1 onchange="showValue('medicineOut',value)" id="medicine">
+    <output id="medicineOut">1</output><br>
+    Occult
+    <input type="range" min="1" max="5" value=1 onchange="showValue('occultOut',value)" id="occult">
+    <output id="occultOut">1</output><br>
+    Politics
+    <input type="range" min="1" max="5" value=1 onchange="showValue('politicsOut',value)" id="politics">
+    <output id="politicsOut">1</output><br>
+    Science
+    <input type="range" min="1" max="5" value=1 onchange="showValue('scienceOut',value)" id="science">
+    <output id="scienceOut">1</output><br>
+    Technology
+    <input type="range" min="1" max="5" value=1 onchange="showValue('technologyOut',value)" id="technology">
+    <output id="technologyOut">1</output><br>
 </body>
 </html>
